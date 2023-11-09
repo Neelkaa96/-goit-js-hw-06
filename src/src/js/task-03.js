@@ -17,14 +17,14 @@ const images = [
 if (!ul) {
   console.error("Nie znaleziono elementu o klasie 'gallery'. Upewnij się, że istnieje w dokumencie HTML.");
 } else {
-  // Tworzymy znacznik ul na podstawie tablicy obiektów images
+ 
   const galleryItems = images.map((image) => `
     <li>
       <img src="${image.url}" alt="${image.alt}">
     </li>
   `).join("");
 
-  // Wstawiamy utworzone elementy do listy ul.gallery przy użyciu insertAdjacentHTML()
+ 
   ul.insertAdjacentHTML("beforeend", galleryItems);
 }
 
