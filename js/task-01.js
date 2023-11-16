@@ -17,3 +17,4 @@ categoryItems.forEach((item, index) => {
   console.log(`Elements: ${categoryItemsList.length}`);
 });
 
+console.log(`Number of categories: ${categoryCount}`);
